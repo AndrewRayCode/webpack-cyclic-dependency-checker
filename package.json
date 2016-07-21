@@ -1,0 +1,33 @@
+{
+  "name": "webpack-cyclic-dependency-checker",
+  "version": "0.0.1",
+  "description": "Webpack cylic dependency checker. Does a depth-first traversal of webpack's stats.json output",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DelvarWorld/webpack-cyclic-dependency-checker.git"
+  },
+  "keywords": [
+    "webpack",
+    "cyclic",
+    "dependency",
+    "cycle",
+    "graph"
+  ],
+  "author": "Andrew Ray",
+  "license": "MIT",
+  "dependencies": {
+    "command-line-args": "^3.0.0"
+  },
+  "bin": {
+    "iscyclic": "./src/cli.js"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jasmine-node": "^1.14.5",
+    "mocha": "^2.5.3"
+  }
+}
